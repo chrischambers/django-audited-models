@@ -1,4 +1,4 @@
-from distutils.core import setup, find_packages
+from distutils.core import setup
 
 setup(
     name="django-audited-models",
@@ -13,7 +13,9 @@ setup(
     license="BSD",
     url="https://github.com/chrischambers/django-audited-models",
     keywords=['django', 'auditing', 'automatic', 'abstract'],
-    packages=find_packages(),
+    packages=[
+        'audited_models',
+    ],
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Environment :: Web Environment",
