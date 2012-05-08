@@ -1,0 +1,3 @@
+django-debug-toolbar==0.9.4
+django-extensions==0.8
+django-threaded-multihost==1.4-1
