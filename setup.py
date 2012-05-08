@@ -15,6 +15,8 @@ setup(
     keywords=['django', 'auditing', 'automatic', 'abstract'],
     packages=[
         'audited_models',
+        'audited_models.test_project',
+        'audited_models.test_project.test_app',
     ],
     classifiers=[
         "Development Status :: 3 - Alpha",
