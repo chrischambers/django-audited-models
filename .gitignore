@@ -1,0 +1,31 @@
+
+# -------
+# Editor:
+# -------
+
+*.swp
+.vimrc
+cscope.*
+.ropeproject
+media/*
+tags
+\#*#
+
+# -------
+# Python:
+# -------
+
+*.pyc
+*.pyo
+
+# --------------------
+# Database / Logfiles:
+# --------------------
+
+*.sqlite
+*.db
+*.log
+ipython_log.py
+pip-log.txt
+
+.DS_Store
