@@ -1,4 +1,4 @@
-from distutils2.core import setup, find_packages
+from distutils.core import setup, find_packages
 
 setup(
     name="django-audited-models",
