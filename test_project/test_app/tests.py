@@ -34,6 +34,9 @@ class DefaultAutditedModelTests(TestCase):
         assert_equal(self.test_instance.creator, self.user)
         assert_equal(self.test_instance.editor, self.user)
 
+    def test_get_latest_by_propagates_to_children(self):
+        assert_equal(TestDefaultAuditedModel.objects.latest(), self.test_instance)
+
 
 class CustomPluralFormTests(TestCase):
 
