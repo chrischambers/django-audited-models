@@ -10,11 +10,11 @@ function) for tracking database record creation and modification times, as
 well as the creator of the record and the last user to edit it. It leverages
 two pluggable applications to achieve this:
 
-    1. `Django Extensions`_, which provides (amongst many other things) a
-       ``CreationDateTimeField`` and ``ModificationDateTimeField``.
-    2. `Django Threaded Multihost`_, originally developed for Satchmo_, which
-       provides a ``threadlocals`` mechanism that works reliably for Django
-       installations powering multiple sites via the ``sites`` framework.
+1. `Django Extensions`_, which provides (amongst many other things) a
+   ``CreationDateTimeField`` and ``ModificationDateTimeField``.
+2. `Django Threaded Multihost`_, originally developed for Satchmo_, which
+   provides a ``threadlocals`` mechanism that works reliably for Django
+   installations powering multiple sites via the ``sites`` framework.
 
 
 .. _`Django Extensions`: https://github.com/django-extensions/django-extensions
