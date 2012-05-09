@@ -24,12 +24,13 @@ two pluggable applications to achieve this:
 Installation
 ============
 
-1. Install pip_ (recommended) or setuptools_
-2. Run ``pip install django-audited-models`` or ``easy_install
-   django-audited-models``.
-3. Inherit from ``AuditedModel`` instead of ``models.Model`` in your django
+1. Install pip_.
+2. Run ``pip install django-audited-models``.
+3. Install its dependencies by changing to the source directory and running
+   ``pip install -r requirements.txt``.
+4. Inherit from ``AuditedModel`` instead of ``models.Model`` in your django
    applications.
-4. Profit!
+5. Profit!
 
 .. _pip: http://www.pip-installer.org/en/latest/index.html
 .. _setuptools: http://pypi.python.org/pypi/setuptools
@@ -52,11 +53,11 @@ Django-audited-models fulfils several needs:
    information automatically. No need to pollute your views with unrelated
    logic or override ``ModelAdmin`` methods to store the user who created the
    record.
-5. It's pluggable - simply drop it in, inherit from ``AuditedModel``, and
-   you'll have your creation/modification dates and the users responsible for
-   them, respectively. Similarly, replace your ``ModelAdmin`` with the
-   ``AuditedAdmin`` subclass and you'll have some sensible defaults for the
-   admin UI (readonly metadata fields, etc.).
+5. It's pluggable - simply drop it in, install its requirements, inherit from
+   ``AuditedModel``, and you'll have your creation/modification dates and the
+   users responsible for them, respectively. Similarly, replace your
+   ``ModelAdmin`` with the ``AuditedAdmin`` subclass and you'll have some
+   sensible defaults for the admin UI (readonly metadata fields, etc.).
 6. As a bonus, ensures that ``MyModel.objects.latest()`` does something
    sensible by default - very handy when working with the interpreter,
    especially.
