@@ -54,7 +54,9 @@ Django-audited-models fulfils several needs:
    record.
 5. It's pluggable - simply drop it in, inherit from ``AuditedModel``, and
    you'll have your creation/modification dates and the users responsible for
-   them, respectively.
+   them, respectively. Similarly, replace your ``ModelAdmin`` with the
+   ``AuditedAdmin`` subclass and you'll have some sensible defaults for the
+   admin UI (readonly metadata fields, etc.).
 6. As a bonus, ensures that ``MyModel.objects.latest()`` does something
    sensible by default - very handy when working with the interpreter,
    especially.
