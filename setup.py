@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name="django-audited-models",
-    version="0.1.alpha",
+    version="0.2.alpha",
     author="Chris Chambers",
     author_email="magma.chambers@gmail.com",
     description=(
