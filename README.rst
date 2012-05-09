@@ -28,9 +28,11 @@ Installation
 2. Run ``pip install django-audited-models``.
 3. Install its dependencies by changing to the source directory and running
    ``pip install -r requirements.txt``.
-4. Inherit from ``AuditedModel`` instead of ``models.Model`` in your django
+4. Add ``threaded_multihost.middleware.ThreadLocalMiddleware`` to your list of
+   ``MIDDLEWARE_CLASSES``.
+5. Inherit from ``AuditedModel`` instead of ``models.Model`` in your django
    applications.
-5. Profit!
+6. Profit!
 
 .. _pip: http://www.pip-installer.org/en/latest/index.html
 .. _setuptools: http://pypi.python.org/pypi/setuptools
