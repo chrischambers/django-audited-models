@@ -26,5 +26,10 @@ setup(
         "Operating System :: OS Independent",
         "Programming Language :: Python",
         "Framework :: Django",
-    ]
+    ],
+    install_requires=[
+        "Django >= 1.3",
+        "django-extensions == 0.8",
+        "django-threaded-multihost == 1.4-1",
+    ],
 )
